@@ -16,9 +16,8 @@ class Article extends \App\Controller
 
                 die ('Такой новости не существует');
             }
-
-            $this->view->display(__DIR__ . '/../../templates/article.php');
         }
+        $this->view->display(__DIR__ . '/../../templates/article.php');
     }
 
 }

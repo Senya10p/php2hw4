@@ -20,9 +20,9 @@
                 <tr>
                     <form action="/admin/index.php" method="post">
                         <td> <?php echo $article->getID(); ?></td>
-                        <td><input type="text" name="header" value="<?php echo $article->getHeader(); ?>" ></td>
+                        <td><input type="text" name="header" value="<?php echo $article->header; ?>" ></td>
 
-                        <td><textarea name="text" ><?php echo $article->getText(); ?></textarea></td>
+                        <td><textarea name="text" ><?php echo $article->text; ?></textarea></td>
 
                         <td><?php echo $article->author->name ?? 'неизвестен'; ?></td>
 

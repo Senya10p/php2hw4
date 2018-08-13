@@ -14,8 +14,8 @@
     <?php
     foreach ( $data as $article ) {
         ?>
-        <a href="/article/?id=<?php echo $article->getId(); ?>"><h3><?php echo $article->getHeader(); ?></h3></a>
-        <p><?php echo $article->getText(); ?></p>
+        <a href="/article/?id=<?php echo $article->getId(); ?>"><h3><?php echo $article->header; ?></h3></a>
+        <p><?php echo $article->text; ?></p>
         <p>(Автор: <?php echo $article->author->name ?? 'неизвестен'; ?>)</p>
         <hr>
     <?php } ?>
