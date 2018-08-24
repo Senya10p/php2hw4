@@ -5,6 +5,8 @@ namespace App;
 
 trait MagicTrait
 {
+    protected $data = [];
+
     /**
      * @param $name
      * @param $value
